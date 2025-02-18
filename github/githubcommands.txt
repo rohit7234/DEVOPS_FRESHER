@@ -1,0 +1,59 @@
+git config --global user.name "nara"
+git config --global user.email "nara@gmail.com"
+git config --list
+git init
+git clone githuburl
+git add fname
+git commit -m "fileadd"
+git show commitid
+git log
+git status
+git push 
+git push origin branchname
+git log --since "MM-DD-YY"
+git log -3
+git log --oneline
+git log --author "authorname"
+git pull --rebase
+git branch
+git branch branchname
+git rebase branchname
+git checkout -b branchname
+git checkout branchname
+git switch branchname
+git push origin -d branchname
+git branch -d branchnme
+git branch -D branchname
+git commit --amend -m "msg" -m "msg"
+git config --alias.aliasname "status"
+git aliasname
+git config --unset --alias.name
+git revert commitid
+git reset --soft commitid-1(previouscommitid )-->(localrepo-->staging)
+git reset --mixed commitid-1(localrepo-->workspace)
+git reset HEAD fname(staging-->workspace)
+git tag 
+git tag tagname
+git checkout tagname
+git tag -d tagname
+git checkout refs/tags/tagname
+git push origin -d tagname
+git push origin tagname
+git stash list
+git stash save "name"
+git stash drop stashname
+git stash pop(cut-->paste to stagingarea)
+git stash apply(copy-->paste)
+git branch -r(remote branches)
+git remote -v(remote details)
+
+=======git pull(it contains two commands)============
+git fetch
+git merge branchname
+
+====to Merge specific file from another branch==============
+
+git cherry-pick commitid
+
+git clean -f
+git diff commitid
